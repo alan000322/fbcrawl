@@ -203,7 +203,7 @@ for post in get_posts(fanpage, pages=page_default, cookies = "cookies/facebook.c
         print("\n\t|||| ERROR{}.....POST_ID: {}  {}\n\t>>>>> {}\n\n".format(i, str(post['post_id']), str(post['time']), str(post['post_url'])))
         P.to_excel("./新增爬蟲/{}_{}ERROR.xlsx".format(fanpage,i), sheet_name='sheet1', index=False)
         P.to_csv("./新增爬蟲/{}_{}ERROR.csv".format(fanpage,i), index=False, encoding='utf-8')
-        break
+        continue
 
 
 
